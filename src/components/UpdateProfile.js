@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 
 export default function UpdateProfile() {
@@ -42,33 +42,34 @@ export default function UpdateProfile() {
   };
 
   return (
-    <h2>Update Profile</h2>
-    { error && <p>{error}</p>  }
-    <form onSubmit={ handleSubmit }>
-    <form>
-    <label>
-    Email:
-    <input type="email" ref={ emailRef } defaultValue{ currentUser.email } required>
-    </label>
+    <>
+      <h2>Update Profile</h2>
+      { error && <p>{error}</p>  }
+      <form onSubmit={ handleSubmit }>
+      <label>
+      Email:
+      <input type="email" ref={ emailRef } defaultValue={ currentUser.email } required/>
+      </label>
 
-    <label>
-    Password:
-    <input type="password" ref={ passwordRef } placeholder="Leave blank to keep the same"
-    </label>
+      <label>
+      Password:
+      <input type="password" ref={ passwordRef } placeholder="Leave blank to keep the same"/>
+      </label>
 
-    <label>
-    Password Confirmation:
-    <input type="password" ref={ passwordConfirmationRef } placeholder="Leave blank to keep the same"
-    </label>
+      <label>
+      Password Confirmation:
+      <input type="password" ref={ passwordConfirmRef } placeholder="Leave blank to keep the same"/>
+      </label>
 
-    <button disabled={ loading } type="submit">
-    Update
-    </button>
+      <button disabled={ loading } type="submit">
+      Update
+      </button>
 
-    </form>
+      </form>
 
-    <div>
-      <Link to="/">Cancel</Link>
-    </div>
+      <div>
+        <Link to="/">Cancel</Link>
+      </div>
+    </>
   )
 }

@@ -26,27 +26,29 @@ export default function ForgotPassword() {
   }
 
   return (
-          <h2>Password Reset</h2>
+    <>
+      <h2>Password Reset</h2>
 
-          { error && <p>{ error }</p> }
-          { message && <p>{ message }</p>}
+      { error && <p>{ error }</p> }
+      { message && <p>{ message }</p>}
 
-          <form onSubmit={ handleSubmit }>
-            <label>
-            Email:
-            <input type="text" name="email" ref={ emailRef } required />
-            </label>
+      <form onSubmit={ handleSubmit }>
+        <label>
+        Email:
+        <input type="text" name="email" ref={ emailRef } required />
+        </label>
 
-            <button disabled={ loading } type="submit"> Reset Password </button>
-          </form>
+        <button disabled={ loading } type="submit"> Reset Password </button>
+      </form>
 
-          <div>
-          <Link to="/login"> Login </Link>
-          </div>
+      <div>
+      <Link to="/login"> Login </Link>
+      </div>
 
-          <div>
-            Need an account?
-            <Link to="/signup">Sign Up</Link>
-          </div>
+      <div>
+        Need an account?
+        <Link to="/signup">Sign Up</Link>
+      </div>
+    </>
   )
 }

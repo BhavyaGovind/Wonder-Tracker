@@ -6,6 +6,7 @@ import Dashboard from './Dashboard';
 import Login from './Login';
 import PrivateRoute from './ForgotPassword';
 import UpdateProfile from './UpdateProfile';
+import ForgotPassword from "./ForgotPassword";
 
 
 
