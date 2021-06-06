@@ -1,24 +1,27 @@
 import React, { useRef, useState } from 'react';
 import { useAuth } from '../context/AuthContext'
+import { Link, useHistory } from "react-router-dom"
+
+
 
 export default function Login() {
 
-  const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
-  const passwordConfirmationRef = useRef();
-  const { signup } = useAuth();
+  const { login } = useAuth();
   const [ error, setError ] = useState('');
   const [ loading, setLoading ] = useState(false);
+  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
     try {
       setError('');
       setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value);
+      await login(emailRef.current.value, passwordRef.current.value);
+      history.push("/")
     } catch {
-      setError('Failed to create an account');
+      setError('Failed to log in ');
     }
     setLoading(false);
   }
@@ -28,11 +31,6 @@ export default function Login() {
     <h2>SignUp</h2>
     { error && <p> { error } </p> }
     <form onSubmit={ handleSubmit }>
-
-    <label>Name
-    <input type="text" name="name"ref={nameRef} placeholder="Bhavya Govind" required/>
-    </label>
-    <br/>
     <label>Email
     <input type="text" name="email" ref={emailRef} placeholder="BG@ga.co" required/>
     </label>
@@ -44,8 +42,8 @@ export default function Login() {
     <button disabled={ loading } type="submit" >Sign Up</button>
     <br/>
     </form>
-    <div className="toLogin">
-    Already have an account? (link to login)
+    <div className="toSignup">
+    Need an account? <Link to="/signup">Sign Up</Link>
     </div>
 
     </div>
