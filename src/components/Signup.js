@@ -40,22 +40,35 @@ export default function Signup() {
     <label>Name
     <input type="text" name="name"ref={nameRef} placeholder="Bhavya Govind" required/>
     </label>
+
     <br/>
+
     <label>Email
     <input type="text" name="email" ref={emailRef} placeholder="BG@ga.co" required/>
     </label>
+
     <br/>
+
     <label>Password
     <input type="password" name="password" ref={passwordRef} required/>
     </label>
+
     <br/>
+
     <label>Password Confirmation
     <input type="password" name="password-confirmation" ref={passwordConfirmationRef} required/>
     </label>
+
     <br/>
-    <button disabled={ loading } type="submit" >Sign Up</button>
+
+    <button disabled={ loading } type="submit" >
+    Sign Up
+    </button>
+
     <br/>
+
     </form>
+
     <div className="toLogin">
       Already have an account? <Link to="/login">Log In</Link>
     </div>

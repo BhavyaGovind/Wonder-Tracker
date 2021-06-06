@@ -15,6 +15,7 @@ export default function Login() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+
     try {
       setError('');
       setLoading(true);
@@ -28,22 +29,37 @@ export default function Login() {
 
   return (
     <div>
-    <h2>SignUp</h2>
+    <h2> Log In </h2>
     { error && <p> { error } </p> }
     <form onSubmit={ handleSubmit }>
-    <label>Email
+
+    <label>
+    Email:
     <input type="text" name="email" ref={emailRef} placeholder="BG@ga.co" required/>
     </label>
+
     <br/>
-    <label>Password
+
+    <label>
+    Password:
     <input type="password" name="password" ref={passwordRef} required/>
     </label>
+
     <br/>
-    <button disabled={ loading } type="submit" >Sign Up</button>
+
+    <button disabled={ loading } type="submit" >
+    Log In
+    </button>
+
     <br/>
+
     </form>
+
     <div className="toSignup">
-    Need an account? <Link to="/signup">Sign Up</Link>
+    Need an account?
+    <Link to="/signup">
+    Sign Up
+    </Link>
     </div>
 
     </div>

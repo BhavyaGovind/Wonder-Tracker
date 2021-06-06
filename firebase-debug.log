@@ -1,0 +1,129 @@
+[debug] [2021-06-06T03:34:22.523Z] ----------------------------------------------------------------------
+[debug] [2021-06-06T03:34:22.525Z] Command:       /usr/local/Cellar/node/15.14.0/bin/node /usr/local/bin/firebase init
+[debug] [2021-06-06T03:34:22.526Z] CLI Version:   9.12.1
+[debug] [2021-06-06T03:34:22.526Z] Platform:      darwin
+[debug] [2021-06-06T03:34:22.526Z] Node Version:  v15.14.0
+[debug] [2021-06-06T03:34:22.527Z] Time:          Sun Jun 06 2021 13:34:22 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-06-06T03:34:22.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-06T03:34:22.534Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-06T03:34:22.534Z] > authorizing via signed-in user (lugtonkatie@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/macrent/Projects/wonder-tracker/Wonder-Tracker
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using wonder-tracker. 
+[debug] [2021-06-06T03:34:24.409Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker [none]
+[debug] [2021-06-06T03:34:25.016Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker 403
+[debug] [2021-06-06T03:34:25.016Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-06-06T03:34:25.017Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-06-06T03:34:25.267Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/usr/local/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project wonder-tracker. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-06-06T03:35:20.691Z] ----------------------------------------------------------------------
+[debug] [2021-06-06T03:35:20.695Z] Command:       /usr/local/Cellar/node/15.14.0/bin/node /usr/local/bin/firebase init
+[debug] [2021-06-06T03:35:20.696Z] CLI Version:   9.12.1
+[debug] [2021-06-06T03:35:20.696Z] Platform:      darwin
+[debug] [2021-06-06T03:35:20.696Z] Node Version:  v15.14.0
+[debug] [2021-06-06T03:35:20.698Z] Time:          Sun Jun 06 2021 13:35:20 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-06-06T03:35:20.699Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-06T03:35:20.710Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-06T03:35:20.711Z] > authorizing via signed-in user (lugtonkatie@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/macrent/Projects/wonder-tracker/Wonder-Tracker
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using wonder-tracker. 
+[debug] [2021-06-06T03:35:22.637Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker [none]
+[debug] [2021-06-06T03:35:23.216Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker 403
+[debug] [2021-06-06T03:35:23.216Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-06-06T03:35:23.217Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-06-06T03:35:23.454Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/usr/local/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project wonder-tracker. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-06-06T03:37:02.394Z] ----------------------------------------------------------------------
+[debug] [2021-06-06T03:37:02.397Z] Command:       /usr/local/Cellar/node/15.14.0/bin/node /usr/local/bin/firebase init
+[debug] [2021-06-06T03:37:02.397Z] CLI Version:   9.12.1
+[debug] [2021-06-06T03:37:02.397Z] Platform:      darwin
+[debug] [2021-06-06T03:37:02.398Z] Node Version:  v15.14.0
+[debug] [2021-06-06T03:37:02.399Z] Time:          Sun Jun 06 2021 13:37:02 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-06-06T03:37:02.399Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-06T03:37:02.411Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-06T03:37:02.411Z] > authorizing via signed-in user (lugtonkatie@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/macrent/Projects/wonder-tracker/Wonder-Tracker
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using wonder-tracker. 
+[debug] [2021-06-06T03:37:04.738Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker [none]
+[debug] [2021-06-06T03:37:05.305Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker 403
+[debug] [2021-06-06T03:37:05.305Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wonder-tracker {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-06-06T03:37:05.306Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-06-06T03:37:05.544Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/usr/local/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/usr/local/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project wonder-tracker. Please make sure the project exists and your account has permission to access it.
