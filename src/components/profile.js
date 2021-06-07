@@ -1,10 +1,13 @@
 import React from 'react';
-import ProfileForm from './profileForm';
+import { Link } from "react-router-dom";
 
 const Profile = (users) => {
   return (
     <div>
-      <ProfileForm/>
+      <h1>Name:</h1>
+      <Link to="/ProfileForm">
+        Update Profile
+      </Link>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
+import Profile from './profile';
 
 export default function Dashboard() {
   const [ error, setError ] = useState("")
@@ -26,6 +27,7 @@ export default function Dashboard() {
       <Link to="/update-profile">
         Update Profile
       </Link>
+      <Profile />
       <button onClick={ handleLogout }> Logout </button>
     </>
   )
